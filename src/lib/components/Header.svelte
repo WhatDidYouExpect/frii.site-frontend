@@ -29,34 +29,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <header bind:this={header}>
-    <a class="item" href="/">
-        <span class="material-symbols-outlined">home</span>
-        <p>{$t("common.dashboard_home")}</p>
-    </a>
-
-    <a class="item" href="/dashboard">
-        <span class="material-symbols-outlined">apps</span>
-        <p>{$t("common.dashboard_navbar")}</p>
-    </a>
-
-    <a class="item" href="/account/manage">
-        <span class="material-symbols-outlined">person</span>
-        <p>{$t("common.dashboard_account")}</p>
-    </a>
-    
-    <a class="item" href="/report">
-        <span class="material-symbols-outlined">flag</span>
-        <p>{$t("common.dashboard_abuse")}</p>
-    </a>
-    <a class="item" href="/aboutus">
-        <span class="material-symbols-outlined">book</span>
-        <p>{$t("common.dashboard_aboutus")}</p>
-    </a>
-    <a class="item" href="#">
-        <span class="material-symbols-outlined">computer</span>
-        <p>{serverUrl}</p>
-    </a>
-
     <div class="item">
         <span class="material-symbols-outlined">language</span>
         <select style="color: var(--primary);" bind:value="{$locale}" on:change={handleChange}>
@@ -78,7 +50,7 @@
         left: 0px;
         background-color: rgb(61, 61, 61);
         min-height: 50px;
-        width: 100vw;
+        width: 150px;
 
         z-index: 10;
         border-radius: 20px;
@@ -129,7 +101,8 @@
     }
     select {
         border-style: none;
-        background-color: none;
+        background-color: rgb(61, 61, 61);
+        color: red;
     }
     select * {
         color: var(--primary)

@@ -1,1 +1,0 @@
-<script>window.location.href = "https://frii.site/report/security"</script>
