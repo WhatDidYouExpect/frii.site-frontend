@@ -1,4 +1,4 @@
-import { redirectToLogin } from "./helperFuncs";
+import { redirectToLogin } from "./helperFuncs"; 
 export const serverURL="https://api.frii.site";
 
 async function digestMessage(message:string) {
